@@ -8,6 +8,19 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded"
 )
+st.markdown("""
+    <style>
+.card {
+    border: 2px solid #007bff; /* Blue border */
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 15px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+    margin-bottom: 15px;
+    max-width: 300px; /* Optional: Controls width */
+    }
+</style>
+""", unsafe_allow_html=True)
 # Load dataset
 @st.cache_data
 def load_data():
